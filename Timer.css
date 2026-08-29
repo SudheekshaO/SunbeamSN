@@ -1,0 +1,36 @@
+@property --number {
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 20;
+}
+
+
+/* 2. Create the countdown animation */
+@keyframes countdown {
+  from {
+    --number: 20;
+  }
+  to {
+    --number: 0;
+  }
+}
+
+
+/* 3. Apply the animation and display the value */
+.timer {
+  font-family: Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+ 
+  /* Bind the animation: 10 seconds long, linear progression, stops at final frame */
+  animation: countdown 20s linear forwards;
+ 
+  /* Link the CSS counter to the custom variable */
+  counter-reset: timer-seconds var(--number);
+}
+
+
+/* 4. Render the counter value as text */
+.timer::after {
+  content: counter(timer-seconds);
+}
