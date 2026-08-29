@@ -30,8 +30,10 @@ color:#003366;
   margin: 10px;
   font-size: 1.1rem;
   border-radius: 25px;
-  color: rgb(255, 255, 255);
+  color: white;
   transition: 0.3s ease;
+  display: inline-block;
+  background-color:#cae7ff;
 }
 .btn-primary {
   background-color: #4da3ff;
