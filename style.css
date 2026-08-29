@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+  background-color: #e3f2fd; 
+  margin: 0;
+  padding: 40px;
+}
+h1 {
+  font-size: 4.5rem; 
+  color: #1565c0; 
+  margin-bottom: 25px;
+}
+p {
+  display: inline-block;
+  border: 2px solid #90caf9; 
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #0d47a1; 
+}
+
+
+button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #cae7ff; 
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #1e88e5; 
+  transform: scale(1.05);
+}
+
